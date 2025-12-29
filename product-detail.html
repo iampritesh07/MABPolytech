@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MAB Polytech</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>Pimpri-Chinchwad, Pune, INDIA</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-envelope text-primary me-2"></small>
+                    <small>mabpolytech@gmail.com</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+91 7276726030/9421607331</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="img/MAB_logo.png" alt="MAB Logo" height="30" class="m-0 text-primary">
+            <h2 class="m-0 text-primary mx-3">Polytech</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="product.html" class="nav-item nav-link">Product</a>
+            </div>
+            <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Contact Us<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown" id="product-title">Product Details</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="product.html">Products</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page" id="breadcrumb-product">Product Details</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Product Information Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="img/service-1.jpg" alt="" id="product-image">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="display-5 mb-4" id="product-name">Product Name</h1>
+                    <p class="mb-4" id="product-description">Product information will be displayed here. Our company has gained a strong reputation in the industry for manufacturing and supplying high-quality plastic compounding granules.</p>
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check text-primary me-2"></i>
+                                <span>High Quality Materials</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check text-primary me-2"></i>
+                                <span>Customized Solutions</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check text-primary me-2"></i>
+                                <span>Industry Standards</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check text-primary me-2"></i>
+                                <span>Reliable Supply</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="mb-3">Applications:</h5>
+                        <p id="product-applications">Suitable for various industrial applications including automotive, electronics, packaging, and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product Information End -->
+
+    <!-- Quote Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container quote px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/quote.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-5 mb-4">Free Quote</h1>
+                        </div>
+                        <p class="mb-4 pb-2">Get a free quote for this product. Fill out the form below and our team will get back to you as soon as possible.</p>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;" required>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;" required>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;" required>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" id="product-select" style="height: 55px;" required>
+                                        <option value="">Select A Product</option>
+                                        <option value="pp-plain-black">PP Plain Black Granules</option>
+                                        <option value="pp-colored">PP Colored Granules</option>
+                                        <option value="pptf20-black">PPTF20% Black Granules</option>
+                                        <option value="ppgf-black">PPGF20% & 30% Black Granules</option>
+                                        <option value="pom-black">POM Black Granules</option>
+                                        <option value="nylon-plain-black">Nylon Plain Black Granules</option>
+                                        <option value="nylon6-gf30-black">Nylon6 GF30% Black Granules</option>
+                                        <option value="nylon66-gf30-black">Nylon66 GF30% Black Granules</option>
+                                        <option value="hips-black">HIPS Black Granules</option>
+                                        <option value="abs-black">ABS Black Granules</option>
+                                        <option value="pc-abs-black">PC-ABS Black Granules</option>
+                                        <option value="pc-abs-fr-black">PC-ABS FR Black Granules</option>
+                                        <option value="pbt-plain-black">PBT Plain Black Granules</option>
+                                        <option value="pbt-gf30-black">PBT GF30% Black Granules</option>
+                                        <option value="hdpe-im-black">HDPE Black (IM Grade) Granules</option>
+                                        <option value="hdpe-bm-black">HDPE Black (BM Grade) Granules</option>
+                                        <option value="tpe-black">TPE Black Granules</option>
+                                        <option value="ldpe-black">LDPE Black Granules</option>
+                                        <option value="lldpe-black">LLDPE Black Granules</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" placeholder="Special Note" rows="4"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Ground floor,
+                        Gat No-1576,
+                        Near Datta Engineering,
+                        Shelar-Vasti,Chikhali.
+                        Pimpri-Chinchwad,Pune
+                        Maharashtra-411062</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 7276726030</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9421607331</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>mabpolytech@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Products</h4>
+                    <a class="btn btn-link" href="product.html">PP Granules</a>
+                    <a class="btn btn-link" href="product.html">POM Granules</a>
+                    <a class="btn btn-link" href="product.html">Nylon Granules</a>
+                    <a class="btn btn-link" href="product.html">HIPS Granules</a>
+                    <a class="btn btn-link" href="product.html">ABS Granules</a>
+                    <a class="btn btn-link" href="product.html">PC Granules</a>
+                    <a class="btn btn-link" href="product.html">PBT Granules</a>
+                    <a class="btn btn-link" href="product.html">HDPE Granules</a>
+                    <a class="btn btn-link" href="product.html">TPE Granules</a>
+                    <a class="btn btn-link" href="product.html">LDPE Granules</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="product.html">Our Products</a>
+                    <a class="btn btn-link" href="index.html">Home</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Newsletter</h4>
+                    <p>Newsletter header.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">MAB Polytech</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Product Detail Script -->
+    <script>
+        // Product data mapping
+        const products = {
+            'pp-plain-black': {
+                name: 'PP Plain Black Granules',
+                description: 'High-quality Polypropylene (PP) Plain Black Granules manufactured to meet industry standards. These granules are ideal for various injection molding applications and offer excellent mechanical properties.',
+                applications: 'Ideal for automotive parts, household appliances, packaging containers, and general-purpose plastic products.'
+            },
+            'pp-colored': {
+                name: 'PP Colored Granules',
+                description: 'Premium Polypropylene Colored Granules available in a wide range of colors. These granules maintain excellent color consistency and are perfect for applications requiring vibrant colors.',
+                applications: 'Suitable for consumer goods, toys, containers, furniture, and any application requiring colored plastic components.'
+            },
+            'pptf20-black': {
+                name: 'PPTF20% Black Granules',
+                description: 'Polypropylene with 20% Talc Filler Black Granules. These granules offer enhanced stiffness, dimensional stability, and heat resistance compared to standard PP.',
+                applications: 'Perfect for automotive components, electrical housings, and applications requiring improved mechanical properties.'
+            },
+            'ppgf-black': {
+                name: 'PPGF20% & 30% Black Granules',
+                description: 'Polypropylene with Glass Fiber reinforcement (20% or 30%) Black Granules. These granules provide superior strength, stiffness, and heat resistance.',
+                applications: 'Ideal for structural components, automotive parts, industrial equipment, and high-performance applications.'
+            },
+            'pom-black': {
+                name: 'POM Black Granules',
+                description: 'Polyoxymethylene (POM) Black Granules known for their excellent mechanical properties, low friction, and dimensional stability.',
+                applications: 'Suitable for precision parts, gears, bearings, fasteners, and mechanical components requiring high precision.'
+            },
+            'nylon-plain-black': {
+                name: 'Nylon Plain Black Granules',
+                description: 'High-performance Nylon Plain Black Granules offering excellent strength, toughness, and chemical resistance.',
+                applications: 'Ideal for automotive parts, electrical components, industrial machinery, and applications requiring durability.'
+            },
+            'nylon6-gf30-black': {
+                name: 'Nylon6 GF30% Black Granules',
+                description: 'Nylon 6 with 30% Glass Fiber reinforcement Black Granules. These granules provide exceptional strength, stiffness, and heat resistance.',
+                applications: 'Perfect for structural automotive parts, industrial equipment, and high-stress applications.'
+            },
+            'nylon66-gf30-black': {
+                name: 'Nylon66 GF30% Black Granules',
+                description: 'Nylon 66 with 30% Glass Fiber reinforcement Black Granules. Offers superior mechanical properties and excellent heat resistance.',
+                applications: 'Ideal for automotive under-the-hood components, industrial machinery, and high-temperature applications.'
+            },
+            'hips-black': {
+                name: 'HIPS Black Granules',
+                description: 'High Impact Polystyrene (HIPS) Black Granules providing good impact strength and ease of processing.',
+                applications: 'Suitable for packaging, consumer goods, toys, and applications requiring good impact resistance.'
+            },
+            'abs-black': {
+                name: 'ABS Black Granules',
+                description: 'Acrylonitrile Butadiene Styrene (ABS) Black Granules known for excellent impact resistance, toughness, and surface finish.',
+                applications: 'Ideal for automotive parts, electronic housings, consumer goods, and applications requiring good aesthetics.'
+            },
+            'pc-abs-black': {
+                name: 'PC-ABS Black Granules',
+                description: 'Polycarbonate-ABS blend Black Granules combining the best properties of both materials - impact resistance and heat resistance.',
+                applications: 'Perfect for automotive interiors, electronic enclosures, and applications requiring both toughness and heat resistance.'
+            },
+            'pc-abs-fr-black': {
+                name: 'PC-ABS FR Black Granules',
+                description: 'Flame Retardant PC-ABS Black Granules offering excellent fire resistance along with good mechanical properties.',
+                applications: 'Ideal for electrical and electronic applications, automotive components, and applications requiring fire safety compliance.'
+            },
+            'pbt-plain-black': {
+                name: 'PBT Plain Black Granules',
+                description: 'Polybutylene Terephthalate (PBT) Plain Black Granules offering excellent electrical properties and chemical resistance.',
+                applications: 'Suitable for electrical connectors, switches, automotive components, and electronic applications.'
+            },
+            'pbt-gf30-black': {
+                name: 'PBT GF30% Black Granules',
+                description: 'PBT with 30% Glass Fiber reinforcement Black Granules providing enhanced strength, stiffness, and dimensional stability.',
+                applications: 'Perfect for structural electrical components, automotive parts, and high-performance applications.'
+            },
+            'hdpe-im-black': {
+                name: 'HDPE Black (IM Grade) Granules',
+                description: 'High-Density Polyethylene (HDPE) Injection Molding Grade Black Granules offering excellent chemical resistance and durability.',
+                applications: 'Ideal for containers, bottles, caps, automotive fuel tanks, and injection molding applications.'
+            },
+            'hdpe-bm-black': {
+                name: 'HDPE Black (BM Grade) Granules',
+                description: 'High-Density Polyethylene (HDPE) Blow Molding Grade Black Granules designed for blow molding processes.',
+                applications: 'Perfect for bottles, containers, drums, and blow molding applications requiring durability.'
+            },
+            'tpe-black': {
+                name: 'TPE Black Granules',
+                description: 'Thermoplastic Elastomer (TPE) Black Granules offering rubber-like flexibility with thermoplastic processability.',
+                applications: 'Suitable for seals, gaskets, grips, automotive components, and applications requiring flexibility.'
+            },
+            'ldpe-black': {
+                name: 'LDPE Black Granules',
+                description: 'Low-Density Polyethylene (LDPE) Black Granules offering excellent flexibility, impact resistance, and processability.',
+                applications: 'Ideal for films, bags, containers, and applications requiring flexibility and good impact properties.'
+            },
+            'lldpe-black': {
+                name: 'LLDPE Black Granules',
+                description: 'Linear Low-Density Polyethylene (LLDPE) Black Granules providing better strength and puncture resistance than LDPE.',
+                applications: 'Perfect for films, bags, liners, and packaging applications requiring superior strength.'
+            }
+        };
+
+        // Get URL parameter
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            const results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Load product information
+        function loadProduct() {
+            const productId = getUrlParameter('product');
+            
+            if (productId && products[productId]) {
+                const product = products[productId];
+                
+                // Update page title
+                document.getElementById('product-title').textContent = product.name;
+                document.getElementById('breadcrumb-product').textContent = product.name;
+                document.title = product.name + ' - MAB Polytech';
+                
+                // Update product information
+                document.getElementById('product-name').textContent = product.name;
+                document.getElementById('product-description').textContent = product.description;
+                document.getElementById('product-applications').textContent = product.applications;
+                
+                // Pre-select product in dropdown
+                document.getElementById('product-select').value = productId;
+            } else {
+                // Default product or redirect
+                document.getElementById('product-title').textContent = 'Product Not Found';
+                document.getElementById('product-name').textContent = 'Product Not Found';
+                document.getElementById('product-description').textContent = 'The requested product could not be found. Please select a product from our product list.';
+            }
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProduct();
+        });
+    </script>
+</body>
+
+</html>
+
