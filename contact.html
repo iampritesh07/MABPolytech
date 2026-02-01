@@ -128,10 +128,17 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
+                                        <input type="tel" class="form-control" id="mobile" placeholder="Your Mobile Number" inputmode="tel">
+                                        <label for="mobile">Mobile Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
                                         <input type="email" class="form-control" id="email" placeholder="Your Email">
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
+                                
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" id="subject" placeholder="e.g., Product Inquiry, Custom Quote Request">
@@ -142,6 +149,21 @@
                                     <div class="form-floating">
                                         <textarea class="form-control" placeholder="Tell us about your requirements, product specifications, or any questions you have..." id="message" style="height: 100px"></textarea>
                                         <label for="message">Your Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label d-block mb-2">Preferred contact method</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="preferred_contact" id="pref_email" value="email" checked>
+                                        <label class="form-check-label" for="pref_email">Email</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="preferred_contact" id="pref_phone" value="phone">
+                                        <label class="form-check-label" for="pref_phone">Phone</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="preferred_contact" id="pref_whatsapp" value="whatsapp">
+                                        <label class="form-check-label" for="pref_whatsapp">WhatsApp</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
