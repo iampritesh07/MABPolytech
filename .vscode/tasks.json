@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "noop",
+			"type": "shell",
+			"command": "echo skip",
+			"isBackground": false
+		},
+		{
+			"label": "noop2",
+			"type": "shell",
+			"command": "echo skip2",
+			"isBackground": false
+		},
+		{
+			"label": "noop3",
+			"type": "shell",
+			"command": "echo preparing edits",
+			"isBackground": false
+		},
+		{
+			"label": "noop4",
+			"type": "shell",
+			"command": "echo continue",
+			"isBackground": false
+		}
+	]
+}

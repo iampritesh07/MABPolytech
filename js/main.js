@@ -83,7 +83,50 @@
             }
         }
     });
+    // Social links: keep safe fallback in lower env, inject real URLs in higher env via tokens.
+    var socialLinks = window.MAB_SOCIAL_LINKS || {};
+    var allowedSocialKeys = {
+        x: true,
+        facebook: true,
+        linkedin: true,
+        instagram: true
+    };
+    var tokenPattern = /^__[^_]+(?:_[^_]+)*__$/;
+    $('[data-social]').each(function () {
+        var $link = $(this);
+        var key = ($link.data('social') || '').toString().toLowerCase();
+        if (key === 'twitter') {
+            key = 'x';
+            $link.attr('data-social', 'x');
+        }
 
+        if (!allowedSocialKeys[key]) {
+            $link.attr('href', 'javascript:void(0)');
+            $link.attr('aria-disabled', 'true');
+            $link.addClass('disabled');
+            $link.removeAttr('target');
+            $link.removeAttr('rel');
+            return;
+        }
+
+        var configured = (socialLinks[key] || '').toString().trim();
+        var isConfigured = configured && !tokenPattern.test(configured);
+
+        if (isConfigured) {
+            $link.attr('href', configured);
+            if (/^https?:\/\//i.test(configured)) {
+                $link.attr('target', '_blank');
+                $link.attr('rel', 'noopener noreferrer');
+            } else {
+                $link.removeAttr('target');
+                $link.removeAttr('rel');
+            }
+        } else {
+            $link.attr('href', 'contact.html');
+            $link.removeAttr('target');
+            $link.removeAttr('rel');
+        }
+    });
 
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({
