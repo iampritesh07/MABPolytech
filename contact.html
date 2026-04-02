@@ -30,6 +30,48 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .contact-form-shell {
+            padding: 1.5rem;
+            background: #FFFFFF;
+            border: 1px solid rgba(15, 23, 43, .08);
+            border-radius: 1rem;
+            box-shadow: 0 20px 40px rgba(15, 23, 43, .08);
+        }
+
+        .contact-form-status,
+        .contact-form-error {
+            border-radius: .75rem;
+        }
+
+        .contact-form-frame-wrap {
+            min-height: 620px;
+            border-radius: .85rem;
+            overflow: hidden;
+            border: 1px solid rgba(15, 23, 43, .08);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(248, 250, 252, 1) 100%);
+        }
+
+        .contact-form-frame {
+            display: block;
+            width: 100%;
+            min-height: 620px;
+            border: 0;
+            background: transparent;
+        }
+
+        @media (max-width: 575.98px) {
+            .contact-form-shell {
+                padding: 1rem;
+            }
+
+            .contact-form-frame-wrap,
+            .contact-form-frame {
+                min-height: 720px;
+            }
+        }
+    </style>
 </head>
 
 <body id="top">
@@ -118,59 +160,29 @@
                             <h1 class="display-5 mb-4">Contact Us</h1>
                         </div>
                         <p class="mb-4">Have questions about our products or need a custom quote? We're here to help! Fill out the form below and our team will respond within 24 hours. For urgent inquiries, please call us directly.</p>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="tel" class="form-control" id="mobile" placeholder="Your Mobile Number" inputmode="tel">
-                                        <label for="mobile">Mobile Number</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="e.g., Product Inquiry, Custom Quote Request">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Tell us about your requirements, product specifications, or any questions you have..." id="message" style="height: 100px"></textarea>
-                                        <label for="message">Your Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label d-block mb-2">Preferred contact method</label>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="preferred_contact" id="pref_email" value="email" checked>
-                                        <label class="form-check-label" for="pref_email">Email</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="preferred_contact" id="pref_phone" value="phone">
-                                        <label class="form-check-label" for="pref_phone">Phone</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="preferred_contact" id="pref_whatsapp" value="whatsapp">
-                                        <label class="form-check-label" for="pref_whatsapp">WhatsApp</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                </div>
+                        <div class="contact-form-shell" data-contact-form-container>
+                            <div class="alert alert-info contact-form-status mb-3" role="status" aria-live="polite" data-contact-form-status>
+                                Loading our inquiry form...
                             </div>
-                        </form>
+                            <div class="alert alert-danger contact-form-error d-none mb-3" role="alert" data-contact-form-error></div>
+                            <div class="contact-form-frame-wrap d-none" data-contact-form-frame-wrap>
+                                <iframe
+                                    class="contact-form-frame"
+                                    title="MAB Polytech inquiry form"
+                                    loading="lazy"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    data-contact-form-frame>
+                                </iframe>
+                            </div>
+                            <p class="small text-muted mb-0">
+                                By submitting this inquiry, you agree that MAB Polytech may use your contact details to respond. Do not include confidential drawings, pricing details, or sensitive personal information.
+                            </p>
+                            <noscript>
+                                <div class="alert alert-warning mt-3 mb-0" role="alert">
+                                    This inquiry form requires JavaScript to load. Please use the contact details shown on this page.
+                                </div>
+                            </noscript>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
@@ -268,6 +280,7 @@
 
     <!-- Template Javascript -->
     <script src="js/social-links.config.js"></script>
+    <script src="js/contact-form.config.js"></script>
     <script src="js/main.js"></script>
 </body>
 
