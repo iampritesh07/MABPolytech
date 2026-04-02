@@ -33,7 +33,7 @@
 
     <style>
         .contact-form-shell {
-            padding: 1.5rem;
+            padding: 1.5rem 1.5rem 0;
             background: #FFFFFF;
             border: 1px solid rgba(15, 23, 43, .08);
             border-radius: 1rem;
@@ -46,7 +46,7 @@
         }
 
         .contact-form-frame-wrap {
-            min-height: 620px;
+            min-height: 0;
             border-radius: .85rem;
             overflow: hidden;
             border: 1px solid rgba(15, 23, 43, .08);
@@ -63,7 +63,7 @@
 
         @media (max-width: 575.98px) {
             .contact-form-shell {
-                padding: 1rem;
+                padding: 1rem 1rem 0;
             }
 
             .contact-form-frame-wrap,
@@ -155,29 +155,111 @@
     <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 6rem 0;">
         <div class="container contact px-lg-0">
             <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                <div class="col-lg-7 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
                     <div class="p-lg-5 ps-lg-0">
                         <div class="section-title text-start">
                             <h1 class="display-5 mb-4">Contact Us</h1>
                         </div>
                         <p class="mb-4">Have questions about our products or need a custom quote? We're here to help! Fill out the form below and our team will respond within 24 hours. For urgent inquiries, please call us directly.</p>
-                        <div class="contact-form-shell" data-contact-form-container>
-                            <div class="alert alert-info contact-form-status mb-3" role="status" aria-live="polite" data-contact-form-status>
-                                Loading our inquiry form...
+                        <div class="contact-form-shell">
+                            <div class="alert alert-danger d-none mb-3" role="alert" id="zf_error_MtEt68dfvQ0tT-LeUOj0CMvjN97ih4Ie_vjeXYlAnIs">
+                                We could not load the inquiry form right now. Please refresh the page and try again, or use the contact details shown on this page.
                             </div>
-                            <div class="alert alert-danger contact-form-error d-none mb-3" role="alert" data-contact-form-error></div>
-                            <div class="contact-form-frame-wrap d-none" data-contact-form-frame-wrap>
-                                <iframe
-                                    class="contact-form-frame"
-                                    title="MAB Polytech inquiry form"
-                                    loading="lazy"
-                                    referrerpolicy="strict-origin-when-cross-origin"
-                                    data-contact-form-frame>
-                                </iframe>
-                            </div>
-                            <p class="small text-muted mb-0">
-                                By submitting this inquiry, you agree that MAB Polytech may use your contact details to respond. Do not include confidential drawings, pricing details, or sensitive personal information.
-                            </p>
+                            <div class="contact-form-frame-wrap" id="zf_div_MtEt68dfvQ0tT-LeUOj0CMvjN97ih4Ie_vjeXYlAnIs"></div>
+                            <script type="text/javascript">
+                                (function () {
+                                    var formId = 'MtEt68dfvQ0tT-LeUOj0CMvjN97ih4Ie_vjeXYlAnIs';
+                                    var containerId = 'zf_div_' + formId;
+                                    var errorId = 'zf_error_' + formId;
+
+                                    function showEmbedError() {
+                                        var errorNode = document.getElementById(errorId);
+                                        if (errorNode) {
+                                            errorNode.classList.remove('d-none');
+                                        }
+                                    }
+
+                                    try {
+                                        var iframe = document.createElement('iframe');
+                                        var iframeSrc = 'https://forms.zohopublic.in/prasadkalezoho1/form/ContactUs/formperma/MtEt68dfvQ0tT-LeUOj0CMvjN97ih4Ie_vjeXYlAnIs?zf_rszfm=1';
+
+                                        try {
+                                            if (typeof ZFAdvLead !== 'undefined' && typeof zfutm_zfAdvLead !== 'undefined') {
+                                                for (var advIdx = 0; advIdx < ZFAdvLead.utmPNameArr.length; advIdx++) {
+                                                    var advParam = ZFAdvLead.utmPNameArr[advIdx];
+                                                    advParam = (ZFAdvLead.isSameDomian && ZFAdvLead.utmcustPNameArr.indexOf(advParam) === -1) ? 'zf_' + advParam : advParam;
+                                                    var advValue = zfutm_zfAdvLead.zfautm_gC_enc(ZFAdvLead.utmPNameArr[advIdx]);
+                                                    if (typeof advValue !== 'undefined' && advValue !== '') {
+                                                        iframeSrc += (iframeSrc.indexOf('?') > 0 ? '&' : '?') + advParam + '=' + advValue;
+                                                    }
+                                                }
+                                            }
+
+                                            if (typeof ZFLead !== 'undefined' && typeof zfutm_zfLead !== 'undefined') {
+                                                for (var leadIdx = 0; leadIdx < ZFLead.utmPNameArr.length; leadIdx++) {
+                                                    var leadParam = ZFLead.utmPNameArr[leadIdx];
+                                                    var leadValue = zfutm_zfLead.zfutm_gC_enc(ZFLead.utmPNameArr[leadIdx]);
+                                                    if (typeof leadValue !== 'undefined' && leadValue !== '') {
+                                                        iframeSrc += (iframeSrc.indexOf('?') > 0 ? '&' : '?') + leadParam + '=' + leadValue;
+                                                    }
+                                                }
+                                            }
+                                        } catch (trackingError) {
+                                            // Ignore tracking enrichment failures and continue with the base embed URL.
+                                        }
+
+                                        iframe.src = iframeSrc;
+                                        iframe.style.border = 'none';
+                                        iframe.style.width = '100%';
+                                        iframe.style.height = '700px';
+                                        iframe.style.transition = 'all 0.5s ease';
+                                        iframe.setAttribute('aria-label', 'Contact Us');
+                                        iframe.setAttribute('loading', 'lazy');
+
+                                        iframe.addEventListener('error', showEmbedError);
+
+                                        var container = document.getElementById(containerId);
+                                        if (!container) {
+                                            showEmbedError();
+                                            return;
+                                        }
+
+                                        container.appendChild(iframe);
+
+                                        window.addEventListener('message', function (event) {
+                                            var eventData = event.data;
+                                            if (eventData && eventData.constructor === String) {
+                                                var iframeData = eventData.split('|');
+                                                if (iframeData.length === 2 || iframeData.length === 3) {
+                                                    var formPerma = iframeData[0];
+                                                    var iframeHeight = (parseInt(iframeData[1], 10) + 15) + 'px';
+                                                    var embeddedIframe = document.getElementById(containerId).getElementsByTagName('iframe')[0];
+                                                    if (embeddedIframe && embeddedIframe.src.indexOf('formperma') > 0 && embeddedIframe.src.indexOf(formPerma) > 0) {
+                                                        var previousHeight = embeddedIframe.style.height;
+                                                        var shouldScroll = false;
+                                                        if (iframeData.length === 3) {
+                                                            embeddedIframe.scrollIntoView();
+                                                            shouldScroll = true;
+                                                        }
+
+                                                        if (previousHeight !== iframeHeight) {
+                                                            if (shouldScroll) {
+                                                                setTimeout(function () {
+                                                                    embeddedIframe.style.height = iframeHeight;
+                                                                }, 500);
+                                                            } else {
+                                                                embeddedIframe.style.height = iframeHeight;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }, false);
+                                    } catch (embedError) {
+                                        showEmbedError();
+                                    }
+                                })();
+                            </script>
                             <noscript>
                                 <div class="alert alert-warning mt-3 mb-0" role="alert">
                                     This inquiry form requires JavaScript to load. Please use the contact details shown on this page.
@@ -186,7 +268,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+                <div class="col-lg-5 pe-lg-0" style="min-height: 400px;">
                     <div class="position-relative h-100">
                         <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
                     </div>
@@ -273,7 +355,6 @@
 
     <!-- Template Javascript -->
     <script src="js/social-links.config.js"></script>
-    <script src="js/contact-form.config.js"></script>
     <script src="js/main.js"></script>
 </body>
 
